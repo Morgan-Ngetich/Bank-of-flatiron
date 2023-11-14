@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Bank of Flatiron - React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bank of Flatiron is a simple React application for managing transactions. It allows users to add new transactions, view a list of transactions, and delete transactions.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Follow these steps to run the project locally:
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Make sure you have the following installed on your machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/) (which includes npm)
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+    ```bash
+    git clone https://github.com/Morgan-Ngetich/Bank-of-flatiron.git
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Move to the project directory:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    cd Bank-of-flatiron
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Install dependencies:**
 
-### `npm run eject`
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Start the development server:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Features
 
-## Learn More
+- **Add Transaction:** Enter details such as date, description, category, and amount to add a new transaction.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **View Transactions:** See a list of transactions with details like ID, date, description, category, and amount.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Delete Transaction:** Remove a transaction by clicking the delete button.
 
-### Code Splitting
+- **Sort and Search:** Sort transactions by ID, date, description, category, or amount. Search transactions by description.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How It Works
 
-### Analyzing the Bundle Size
+1. **Adding Transactions:**
+   - Click on the "Add new Transaction" section.
+   - Enter the transaction details: date, description, category, and amount.
+   - Click the "Add Transaction" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Viewing Transactions:**
+   - Transactions are displayed in a table with columns for ID, date, description, category, and amount.
 
-### Making a Progressive Web App
+3. **Deleting Transactions:**
+   - Each transaction has a "Remove" button. Clicking it will delete the corresponding transaction.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Sorting and Searching:**
+   - Use the dropdown to select a sorting option (ID, date, description, category, amount).
+   - Use the search box to filter transactions based on description.
 
-### Advanced Configuration
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **`src/App.js`:** Main component containing the overall structure of the app.
 
-### Deployment
+- **`src/TransactionForm.js`:** Form component for adding new transactions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **`src/TransactionTable.js`:** Table component for displaying transactions.
 
-### `npm run build` fails to minify
+- **`src/TransactionItem.js`:** Component representing a single transaction in the table.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+- ([Morgan-Ngetich](https://github.com/Morgan-Ngetich)/)
+- [Email](ngetichmorgan6@gmail.com)
+
+## Contributing
+
+Feel free to contribute to the project. Create a fork, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
