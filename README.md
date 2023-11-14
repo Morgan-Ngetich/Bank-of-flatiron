@@ -1,7 +1,7 @@
 # Bank of Flatiron - React App
 
 Bank of Flatiron is a simple React application for managing transactions. It allows users to add new transactions, view a list of transactions, and delete transactions.
-- [Click here](https://morgan-ngetich.github.io/Bank-of-flatiron/) to visit the websites
+- [Click here](https://morgan-ngetich.github.io/Bank-of-flatiron/) to visit the website.
 
 ## Getting Started
 
@@ -89,4 +89,4 @@ Feel free to contribute to the project. Create a fork, make your changes, and su
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE]([LICENSE](https://github.com/Morgan-Ngetich/Bank-of-flatiron/blob/main/LICENSE)https://github.com/Morgan-Ngetich/Bank-of-flatiron/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Morgan-Ngetich/Bank-of-flatiron/blob/main/LICENSE) file for details.
