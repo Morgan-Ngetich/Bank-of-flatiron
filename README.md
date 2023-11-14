@@ -1,7 +1,7 @@
 # Bank of Flatiron - React App
 
 Bank of Flatiron is a simple React application for managing transactions. It allows users to add new transactions, view a list of transactions, and delete transactions.
-- [Click here]() to visit the websites
+- [Click here](https://morgan-ngetich.github.io/Bank-of-flatiron/) to visit the websites
 
 ## Getting Started
 
