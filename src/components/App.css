@@ -1,0 +1,94 @@
+.app {
+ display: grid;
+ place-items:center;
+}
+ h1 {
+  border-bottom:solid 2px;
+  
+ }
+
+.submit-button{  
+  padding:5px;
+  border-radius: 7px;
+  background-color: grey;
+}
+
+.submit-button:hover {
+  background-color: #e6e6e8;
+  box-shadow: 3px 3px 3px black;
+  cursor: pointer;
+}
+
+.remove {
+  border-radius: 4px;
+}
+.remove:hover{
+  background-color:red;
+  box-shadow: 1px 1px 1px black;
+
+  cursor: pointer;
+}
+
+.inputs{
+  margin-right:6px;
+  color:black;
+}
+
+.tables {
+  font-family: Arial, sans-serif;
+  border: solid 2px;
+  border-radius: 7px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom: 10px
+}
+
+table {
+  border-collapse: collapse;
+  width: 110%; 
+}
+
+
+th, td {
+  padding: 7px;
+  text-align: left;
+}
+
+th {
+  background-color: grey; 
+  
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody {
+  background-color:#e6e6e8;  
+}
+
+.search-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 50%;
+}
+
+.details {
+  width:5%;
+}
+
+.error-message {
+  color:red;  
+  
+  display: flex;
+}
+
+.sort-select {
+  margin-top: 10px;
+}
+
+.add-header {
+  text-align:center;
+  margin-top: 0;  
+}
