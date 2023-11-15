@@ -97,6 +97,13 @@
       "category": "Clothes",
       "amount": "19",
       "id": 15
+    },
+    {
+      "date": "",
+      "description": "PayCheck for Evans fries",
+      "category": "Food",
+      "amount": "1000",
+      "id": 16
     }
   ]
 }
