@@ -8,13 +8,6 @@
       "amount": 1000
     },
     {
-      "id": 2,
-      "date": "2019-12-01",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "amount": -10.55
-    },
-    {
       "id": 3,
       "date": "2019-12-02",
       "description": "South by Southwest Quinoa Bowl at Fresh & Co",
@@ -93,9 +86,16 @@
     },
     {
       "date": "",
+      "description": "PayCheck for Evans fries",
+      "category": "Food",
+      "amount": "2000",
+      "id": 14
+    },
+    {
+      "date": "2023-11-15",
       "description": "Pants, Shirt, Shoes",
       "category": "Clothes",
-      "amount": "1000",
+      "amount": "19",
       "id": 15
     }
   ]
