@@ -34,7 +34,7 @@ function TransactionTable({ transactions, handleDelete }) { //transactions = dat
     });
 
   function deleteTransaction(id) {
-    fetch(`http://localhost:3000/transactions/${id}`, {
+    fetch(`https://my-json-server.typicode.com/Morgan-Ngetich/Bank-of-flatiron/transactions/${id}`, {
       method: 'DELETE',
     });
     handleDelete(id);
