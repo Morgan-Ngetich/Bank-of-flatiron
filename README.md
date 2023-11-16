@@ -1,115 +1,92 @@
-# Putting it All Together: React Fetch CRUD Lab
+# Bank of Flatiron - React App
 
-## Learning Goals
+Bank of Flatiron is a simple React application for managing transactions. It allows users to add new transactions, view a list of transactions, and delete transactions.
+- [Click here](https://morgan-ngetich.github.io/Bank-of-flatiron/) to visit the website.
 
-- Use the `useEffect` hook to fetch data from an API
-- Use event handlers with `fetch` to send data to an API
-- Update state after receiving data from an API
+## Getting Started
 
-## Introduction
+Follow these steps to run the project locally:
 
-We're going to continue working on our quiz app, this time from the
-administrative side of things! We want our quizmasters to be able to view, add,
-edit, and delete the existing quizzes so they can change the content for the
-rest of our users.
+### Prerequisites
 
-There's some starter code set up, so you won't need to create any new components
-for this lab. Your goal will be to work with `fetch` and interact with our quiz
-API to perform the necessary CRUD operations to complete these deliverables.
+Make sure you have the following installed on your machine:
 
-## Setup
+- [Node.js](https://nodejs.org/) (which includes npm)
 
-As usual, make sure to run `npm install` to install the necessary dependencies.
+### Installation
 
-For this lab, we'll be using `json-server` to create a RESTful API with our quiz
-data. You can run `json-server` by running `npm run server` (the command for
-this is in the `package.json` file). Once your server is running, go to
-`http://localhost:4000/questions` in your browser and have a look at the
-question data.
+1. **Clone the repository:**
 
-Then, in a new terminal tab, run `npm start` to run the React application.
+    ```bash
+    git clone https://github.com/Morgan-Ngetich/Bank-of-flatiron.git
+    ```
 
-## Deliverables
+2. **Move to the project directory:**
 
-### GET /questions
+    ```bash
+    cd Bank-of-flatiron
+    ```
 
-When the application loads, get all the questions from
-`http://localhost:4000/questions` and display them using the `QuestionList`
-component.
+3. **Install dependencies:**
 
-You'll need to add `useState` and `useEffect` for this deliverable, but it's up
-to you to decide where it belongs! Think about which components will need access
-to the question data.
+    ```bash
+    npm install
+    ```
 
-### POST /questions
+4. **Start the development server:**
 
-When the user clicks the 'New Question' button, a form will be displayed for
-creating a new question. This form is already set up as a controlled form, so
-your responsibility will be to send this form data to our API _when the form is
-submitted_.
+    ```bash
+    npm start
+    ```
 
-For the API to work, you'll need to format your POST request like this:
+5. **Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.**
 
-```txt
-POST /questions
+## Features
 
-Required Headers:
-{ "Content-Type": "application/json" }
+- **Add Transaction:** Enter details such as date, description, category, and amount to add a new transaction.
 
-Body:
-{
-  "prompt": string,
-  "answers": array of strings,
-  "correctIndex": integer
-}
-```
+- **View Transactions:** See a list of transactions with details like ID, date, description, category, and amount.
 
-In addition to updating the form, you should display the new question in the
-`QuestionList` component by updating state.
+- **Delete Transaction:** Remove a transaction by clicking the delete button.
 
-**NOTE**: because `json-server` doesn't have any validations, if you make any
-mistakes and send the body of your request in the wrong format, you'll need to
-manually delete the entry from the `db.json` file.
+- **Sort and Search:** Sort transactions by ID, date, description, category, or amount. Search transactions by description.
 
-### DELETE /questions/:id
+## How It Works
 
-When the user clicks the 'View Questions' button, a list of all the questions
-should show up (from deliverable 1). _When the delete button is clicked_, the
-question should be removed from the list by updating state. It should _also_ be
-deleted on the server.
+1. **Adding Transactions:**
+   - Click on the "Add new Transaction" section.
+   - Enter the transaction details: date, description, category, and amount.
+   - Click the "Add Transaction" button.
 
-Make sure to include the **id** of the question you're trying to delete in your
-request's url!
+2. **Viewing Transactions:**
+   - Transactions are displayed in a table with columns for ID, date, description, category, and amount.
 
-### PATCH /questions/:id
+3. **Deleting Transactions:**
+   - Each transaction has a "Remove" button. Clicking it will delete the corresponding transaction.
 
-When the user clicks the 'View Questions' button, a list of all the questions
-should show up (from deliverable 1). _When the dropdown for the correct answer
-is changed_, the question should be updated on the server. It should also be
-updated in state.
+4. **Sorting and Searching:**
+   - Use the dropdown to select a sorting option (ID, date, description, category, amount).
+   - Use the search box to filter transactions based on description.
 
-For the API to work, you'll need to format your PATCH request like this:
+## Project Structure
 
-```txt
-PATCH /questions/:id
+- **`src/App.js`:** Main component containing the overall structure of the app.
 
-Required Headers:
-{ "Content-Type": "application/json" }
+- **`src/TransactionForm.js`:** Form component for adding new transactions.
 
-Body:
-{
-  "correctIndex": integer
-}
-```
+- **`src/TransactionTable.js`:** Table component for displaying transactions.
 
-Make sure to include the **id** of the question you're trying to update in your
-request's url!
+- **`src/TransactionItem.js`:** Component representing a single transaction in the table.
 
-## Resources
+## Author
 
-- [Using `fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-- [React `fetch` with `useEffect` Example][react ajax]
-- [React State and Arrays](https://github.com/learn-co-curriculum/react-hooks-state-arrays)
+- ([Morgan-Ngetich](https://github.com/Morgan-Ngetich)/)
+- [Email](ngetichmorgan6@gmail.com)
 
-[react ajax]: https://reactjs.org/docs/faq-ajax.html#example-using-ajax-results-to-set-local-state
+## Contributing
 
+Feel free to contribute to the project. Create a fork, make your changes, and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Morgan-Ngetich/Bank-of-flatiron/blob/main/LICENSE) file for details.
