@@ -17,7 +17,7 @@ function App() {
 
   //Use the useEffect hook to fetch data when the component mounts
   useEffect(() => {
-    fetch('http://localhost:3000/transactions') //Fetch transaction data from the server
+    fetch('https://my-json-server.typicode.com/Morgan-Ngetich/Bank-of-flatiron/transactions') //Fetch transaction data from the server
       .then((res) => res.json()) //Parse the response an JSON format
       .then((data) =>  setFetchedData(data)) //Update state with the fetched data
       .catch((error) => console.error('Error fetching data:', error));//Log any errors
@@ -33,7 +33,7 @@ function App() {
   // Event handlers to submit a new transaction to the server
   const handleSubmit = (event) => {
     event.preventDefault() //Prevent the dafault form behaviour
-    fetch("http://localhost:3000/transactions", { // Send a POST request to add a new transaction
+    fetch("https://my-json-server.typicode.com/Morgan-Ngetich/Bank-of-flatiron/transactions", { // Send a POST request to add a new transaction
       method: "POST",
       headers: {
         'Content-Type' : 'application/json', //Specify JOSN content type
